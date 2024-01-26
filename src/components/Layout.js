@@ -1,6 +1,15 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import { Suspense } from 'react';
 import css from './MoviesGallery.module.css';
+import styled from 'styled-components';
+
+const StyledLink = styled(NavLink)`
+  color: black;
+
+  &.active {
+    color: rgb(255, 106, 0);
+  }
+`;
 
 export const Layout = () => {
   return (
@@ -8,14 +17,14 @@ export const Layout = () => {
       <header>
         <ul className={css.Layout}>
           <li>
-            <NavLink to="/" className={css.ActiveLink}>
+            <StyledLink to="/" className={css.ActiveLink}>
               Home
-            </NavLink>
+            </StyledLink>
           </li>
           <li>
-            <NavLink to="/movies" className={css.ActiveLink}>
+            <StyledLink to="/movies" className={css.ActiveLink}>
               Movies
-            </NavLink>
+            </StyledLink>
           </li>
         </ul>
       </header>

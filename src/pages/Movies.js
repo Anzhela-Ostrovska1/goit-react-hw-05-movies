@@ -38,7 +38,7 @@ const Movies = () => {
   };
 
   return (
-    <div>
+    <div className={css.Container}>
       {error && <h1>{error.message}</h1>}
       <form onSubmit={handleSubmit}>
         <input
@@ -53,15 +53,19 @@ const Movies = () => {
         </button>
       </form>
 
-      <ul className={css.MovieGallery}>
+      {/* <ul className={css.MovieGallery}>
         {movies.map(movie => (
           <li key={movie.id} className={css.MovieItem}>
-            <Link to={`/movies/${movie.id}`} state={{ from: location }}>
+            <Link
+              classNmae={css.MovieItemLink}
+              to={`/movies/${movie.id}`}
+              state={{ from: location }}
+            >
               {movie.original_title}
             </Link>
           </li>
         ))}
-      </ul>
+      </ul> */}
 
       <MoviesList movies={movies} />
     </div>
