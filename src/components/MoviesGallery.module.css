@@ -1,0 +1,92 @@
+.MovieItem {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.MovieItemLink {
+  text-decoration: none;
+  color: #0645ad;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.MovieItemLink:hover,
+.css.MovieItemLink:focus {
+  color: #329ba7;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+.Container {
+  margin-left: 25px;
+}
+
+.MovieInfoContainer {
+  display: flex;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.MovieInfo {
+  margin-left: 20px;
+}
+
+.CastContainer,
+.ReviewsContainer {
+  margin: 25px;
+}
+.CastCharacter,
+.ReviewsAuthor {
+  font-weight: bold;
+}
+
+.Input {
+  width: 300px;
+  margin-left: 25px;
+  height: 25px;
+}
+
+.Layout {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  background-color: lightblue;
+  list-style: none;
+}
+
+.ActiveLink {
+  text-decoration: none;
+}
+
+.Button {
+  margin-left: 10px;
+  height: 30px;
+  width: 70px;
+}
+
+.ButtonBack {
+  padding: 5px 30px;
+  background-color: #329ba7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 25px;
+}
+
+.ButtonBack:hover {
+  background-color: #225f6d;
+}
+
+.CastAndReviews {
+  text-decoration: none;
+  color: black;
+}
+
+.CastAndReviews:hover,
+.css.CastAndReviews:focus {
+  color: #329ba7;
+  text-decoration: underline;
+  transform: scale(1.05);
+}
