@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 import { Layout } from './Layout';
 
@@ -12,6 +12,7 @@ const Cast = lazy(() => import('./Cast'));
 export const App = () => {
   return (
     <Routes>
+      <Route path="*" element={<Navigate to="/" />} />;
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="movies" element={<Movies />} />
